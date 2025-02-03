@@ -64,7 +64,7 @@ function App() {
 
   const steps = [
     {
-      content: "Hello Chidera Goodness Nwonwu 💖",
+      content: "Hello Chidera 💖",
       image: "/character/one.png",
     },
     {
@@ -167,7 +167,7 @@ function App() {
       )}
       {!hasStarted ? (
         <div
-          className="fixed top-0 left-0 w-full h-dvh bg-[#FFC5D3] flex flex-col items-center justify-center text-white text-3xl font-bold cursor-pointer"
+          className="fixed top-0 left-0 w-full h-dvh bg-[#FFC5D3] flex text-center flex-col items-center justify-center text-white text-3xl font-bold cursor-pointer"
           onClick={startExperience}
         >
           <motion.div
@@ -175,11 +175,11 @@ function App() {
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, type: "spring" }}
           >
-            Sweetheart Touch Anywhere To Begin 💖
+            Hello Dera Touch Anywhere To Begin 💖
           </motion.div>
         </div>
       ) : (
-        <div className="bg-[#FFC5D3] min-h-dvh text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto">
+        <div className="bg-[#FFC5D3] min-h-dvh text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto text-center">
           <motion.img
             key={currentStep}
             initial={{ opacity: 0, y: 20 }}
